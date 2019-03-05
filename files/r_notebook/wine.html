@@ -1608,8 +1608,8 @@ $(document).ready(function () {
 </div>
 <div id="video-4---the-regression-model" class="section level1">
 <h1>Video 4 - The Regression Model</h1>
-<p>In R, use the dataset wine.csv to create a linear regression model to predict Price using HarvestRain and WinterRain as independent variables. Using the summary output of this model, answer the following questions:</p>
-<pre class="r"><code>DFWine &lt;- read.csv(&quot;./wine.csv&quot;)
+<p>In R, use the dataset <a href="wine.csv" download>wine.csv</a> to create a linear regression model to predict Price using HarvestRain and WinterRain as independent variables. Using the summary output of this model, answer the following questions:</p>
+<pre class="r"><code>DFWine &lt;- read.csv(&quot;./<a href="wine.csv" download>wine.csv</a>&quot;)
 cat('STR\n')</code></pre>
 <pre><code>## STR</code></pre>
 <pre class="r"><code>str(DFWine)</code></pre>
@@ -1691,7 +1691,7 @@ summary(Model)</code></pre>
 </div>
 <div id="video-5--" class="section level1">
 <h1>Video 5 -</h1>
-<p>Use the dataset wine.csv to create a linear regression model to predict Price using HarvestRain and WinterRain as independent variables, like you did in the previous quick question. Using the summary output of this model, answer the following questions:</p>
+<p>Use the dataset <a href="wine.csv" download>wine.csv</a> to create a linear regression model to predict Price using HarvestRain and WinterRain as independent variables, like you did in the previous quick question. Using the summary output of this model, answer the following questions:</p>
 <div id="harvestrain-significant" class="section level2">
 <h2>2.1 - HarvestRain significant</h2>
 <p>Is the coefficient for HarvestRain significant?</p>
@@ -1715,7 +1715,7 @@ summary(Model)</code></pre>
 <h1>Video 6 - Checking Correlation</h1>
 <div id="correlation-between-harvestrain-and-winterrain" class="section level2">
 <h2>3.1 - Correlation between HarvestRain and WinterRain</h2>
-<p>Using the data set wine.csv, what is the correlation between HarvestRain and WinterRain?</p>
+<p>Using the data set <a href="wine.csv" download>wine.csv</a>, what is the correlation between HarvestRain and WinterRain?</p>
 <pre class="r"><code>cat('Correlation between HarvestRain and WinterRain is',cor(DFWine$HarvestRain, DFWine$WinterRain))</code></pre>
 <pre><code>## Correlation between HarvestRain and WinterRain is -0.2754409</code></pre>
 </div>
@@ -1728,7 +1728,7 @@ summary(Model)</code></pre>
 <p>Answer: R square can not be higher than 1 since the ratio os squared errors is always a positive number. It may be negative if the model perform much worst than the baseline with the test set than the original training set.</p>
 <pre class="r"><code># Computing R square for the model
 
-DFWineTest &lt;- read.csv(&quot;./wine_test.csv&quot;)
+DFWineTest &lt;- read.csv(&quot;./<a href"wine_test.csv" download>wine_test.csv</a>&quot;)
 
 str(DFWineTest)</code></pre>
 <pre><code>## 'data.frame':    2 obs. of  7 variables:
