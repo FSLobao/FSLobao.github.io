@@ -1,3 +1,31 @@
+.w-embed-youtubevideo {
+  width: 100%;
+  position: relative;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-image: url('../images/youtube-placeholder.svg');
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.w-embed-youtubevideo:empty {
+  min-height: 75px;
+  padding-bottom: 56.25%;
+}
+
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
 body {
   font-family: Lato, sans-serif;
   color: #333;
@@ -835,7 +863,23 @@ blockquote {
 
 .image-2 {
   position: static;
-  float: right;
+  float: left;
+}
+
+.floating {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 44px;
+  bottom: -20px;
+  padding: 5px;
+  border-style: none;
+  border-width: 1px;
+  border-color: #000;
+  border-radius: 12px;
+  background-color: hsla(214.44444444444443, 49.54%, 42.75%, 0.36);
+  opacity: 1;
+  text-align: center;
 }
 
 html.w-mod-js *[data-ix="tile-1"] {
