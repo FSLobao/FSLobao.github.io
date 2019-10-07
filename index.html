@@ -195,8 +195,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>Aims to implement a system to automate and optimize a spectrum monitoring network operation using machine learning technics, including strategies to manage the data produced by such network in order to provide insight into the radio spectrum usage though new visualization and analysis strategies.</p>
             <p>Main strategy focus on the creation of estimates for the probability density functions (PDF) that model the communication channel through a basic bayesian network, such as MCMC ( Markov Chain Monte Carlo). Starting with no prior knowledge of the radio spectrum usage, the system progresses through successive approximations until a large number of samples is acquired and a PDF estimate is possible. The use of the estimated PDF allows for further optimization of the acquisition process based on specific reliability targets set by the user.</p>
             <p>PDF functions and channel usage patterns are shared between stations allowing for faster collection of data and further generalization of the models created by clustering of the individual PDF functions around centroids that represent specific usage patterns. The improved models based on the generalized functions may be used in future works to improve simulations and spectrum allocation strategies or to improve regulatory enforcement activities.</p>
-            <p>As per architecture, the system uses microservices developed in C++ and Python running on linux servers, allowing for greater scalability. Data storage uses HDF5 format for better interoperability and easier data sharing. Complementary studies into radio spectrum ontologies was conducted in order to standardize as much as possible the metadata structure that is stored as attributes within each HDF5 file. Some of the most relevant metadata is and replicated into an MariaDB server that supports the graphical user interface (GUI). This GUI was  developed using Wagtail Content Management System (CMS) and Flask.</p>
-            <p>The first system version is intended to be released on the third quarter of 2019 using MIT license model followed by related publications.</p>
+            <p>As per architecture, the system uses microservices developed in C++ and Python running on linux servers, allowing for greater scalability. Data storage uses HDF5 format for better interoperability and easier data sharing. Complementary studies into radio spectrum ontologies was conducted in order to standardize as much as possible the metadata structure that is stored as attributes within each HDF5 file. Some of the most relevant metadata is and replicated into an MariaDB server that supports the graphical user interface (GUI).</p>
+            <p>The pilot version that includes a bayesian carrier detector and basic analytics is available on github at <a href="https://github.com/FSLobao/Spectrum-Cortex" target="_blank">https://github.com/FSLobao/Spectrum-Cortex</a>.</p>
             <figure style="max-width:924pxpx" id="w-node-3346591a40ba-c276667f" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
               <div><img src="images/monitoring-diagram.svg" alt=""></div>
             </figure>
@@ -219,6 +219,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <h1 class="heading">Docs &amp; More</h1>
           <p>On this section I list some of the work I&#x27;ve been doing and that I believe might be of use to others. Most of the recent works are unpublished results from my studies at MUGI. They are presented in reverse chronological order.</p>
+          <div>
+            <div class="w-row">
+              <div class="w-clearfix w-col w-col-1"><img src="images/united-kingdom.svg" width="30" height="30" alt="Text in english" class="image-2"></div>
+              <div class="w-col w-col-11">
+                <h4><a href="documents/20190916_TFM_Fabio_Santos_Lobao.pdf" target="_blank">Master dissertation: Intelligent Radio Spectrum Monitoring</a></h4>
+                <p>&quot;<em>This master dissertation provide an overview about the &quot;Spectrum Cortex&quot; project, presenting the system architecture and pilot system development. The "spectrum cortex" project was briefly described above, on the <a href="#Projects">Projects</a> section </em>&quot;.</p>
+              </div>
+            </div>
+          </div>
           <div>
             <div class="w-row">
               <div class="w-clearfix w-col w-col-1 w-col-medium-1 w-col-small-1 w-col-tiny-tiny-stack"><img src="images/united-kingdom.svg" width="30" height="30" alt="Text in english" class="image-2"></div>
